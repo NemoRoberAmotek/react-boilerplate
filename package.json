@@ -1,6 +1,7 @@
 {
   "name": "react-boilerplate",
   "version": "0.1.0",
+  "prettier": "prettier-config-standard",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
@@ -18,6 +19,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
+    "format": "npx prettier . --write",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -39,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "prettier": "^3.1.1",
+    "prettier-config-standard": "^7.0.0"
   }
 }
