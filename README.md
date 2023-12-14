@@ -6,6 +6,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm run format`
+Formats the codebase using Prettier standard config.
+
+### `npm run start-server`
+Runs the Express proxy server in development mode.
+This is necessary for the React client to work properly.
+
 ### `npm start`
 
 Runs the app in the development mode.\
