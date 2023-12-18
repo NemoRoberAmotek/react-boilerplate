@@ -15,14 +15,21 @@ const Breeds = () => {
 
   return (
     <Page>
-      <Typography variant='h4'>Breeds</Typography>
-      <Grid>
-        {breedsLoading ? (
-          <Spinner />
-        ) : (
-          breeds.map((breed) => <BreedCard breed={breed} key={breed.id} />)
-        )}
-      </Grid>
+      <Typography variant='h4' marginBottom={4}>
+        Breeds
+      </Typography>
+
+      {breedsLoading ? (
+        <Spinner />
+      ) : (
+        <Grid container spacing={3}>
+          {breeds.map((breed) => (
+            <Grid item sm={6} md={4} key={breed.id}>
+              <BreedCard breed={breed} />
+            </Grid>
+          ))}
+        </Grid>
+      )}
     </Page>
   )
 }

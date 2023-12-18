@@ -20,11 +20,23 @@ beforeEach(() => {
           Promise.resolve([
             {
               id: 1,
-              name: 'Labrador'
+              name: 'Labrador',
+              bred_for: 'Companionship',
+              temperament: 'Sweet',
+              origin: 'US',
+              image: {
+                url: 'http://image.com'
+              }
             },
             {
               id: 2,
-              name: 'Cavalier King Charles Spaniel'
+              name: 'Cavalier King Charles Spaniel',
+              bred_for: 'Companionship',
+              temperament: 'Sweet',
+              origin: 'US',
+              image: {
+                url: 'http://image.com'
+              }
             }
           ])
       })
