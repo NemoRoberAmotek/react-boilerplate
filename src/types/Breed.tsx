@@ -49,4 +49,5 @@ export type Breed = {
   hypoallergenic: number
   reference_image_id: string
   image: Image
+  bred_for: string
 }
