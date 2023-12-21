@@ -17,6 +17,8 @@ function useFetchResource<T>(
   const [error, setError] = useState<FetchError | undefined>(undefined)
 
   const executeFetch = async () => {
+    setLoading(true)
+
     const getData = async () => {
       const res = await fetch(
         `${process.env.REACT_APP_PROXY_ROOT_PATH}${path}?limit=${params?.limit}&page=${params?.page}`
